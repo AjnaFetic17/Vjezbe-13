@@ -6,7 +6,7 @@ const cors = require('cors');
 const app = express();
 
 app.use(cors())
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
 //koristi public folder za spremanje static fajlova
 app.use(express.static("public"));
